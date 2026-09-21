@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>WE ARE LEGEND — Member Lookup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+  <header class="crest">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme" title="Toggle light/dark theme">🌙</button>
+    <div class="crest-mark">⚜</div>
+    <div class="crest-title">WE ARE LEGEND</div>
+    <div class="crest-sub">Official Member Registry &middot; Public Lookup</div>
+  </header>
+
+  <main class="lookup-card">
+    <div class="lookup-intro">
+      Enter a Member ID to view that member's official registry record.
+    </div>
+
+    <form id="lookupForm" class="lookup-form">
+      <input type="text" id="memberIdInput" placeholder="e.g. WAL-SD-S-A-1203-001" autocomplete="off" autocapitalize="characters" spellcheck="false">
+      <button type="submit" id="lookupBtn">🔎 Look Up</button>
+    </form>
+
+    <div id="statusLine" class="status-line"></div>
+
+    <div id="resultArea"></div>
+  </main>
+
+  <div style="display:flex; justify-content:center; gap:16px; margin-top:20px;">
+    <a href="directory.html" style="color:var(--gold-light); text-decoration:none; font-size:12px;">📇 Member Directory</a>
+    <span style="color:var(--paper-dim);">·</span>
+    <a href="wall-of-fame.html" style="color:var(--gold-light); text-decoration:none; font-size:12px;">🏆 Wall of Fame</a>
+  </div>
+
+  <footer class="page-footer">
+    <div class="motto">&ldquo;Together in Happiness, Together in Difficulties, Legends Forever.&rdquo;</div>
+    <div class="sub-footer">This is a read-only lookup — records can only be added or changed by registry administrators.</div>
+  </footer>
+
+</div>
+
+<script src="config.js"></script>
+<script src="api.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
