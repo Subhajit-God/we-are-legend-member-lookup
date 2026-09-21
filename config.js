@@ -5,6 +5,6 @@
    ================================================================ */
 
 const CONFIG = {
-  API_URL: "https://script.google.com/macros/s/AKfycbxKpdFeE6y05j5xIw0J96r5bOR8Z9sXv26bfxT9JWg-7aTx33kTRXPai08sqIOeYVk/exec",
+  API_URL: "https://script.google.com/macros/s/AKfycbxHBlXcIReDPnA55L2vdU2KJF2osooAxCPXfvsJojLOzAG7eDzw1CjpL56_gkyDobpiNg/exec",
   APP_NAME: "WE ARE LEGEND"
 };
